@@ -38,7 +38,11 @@
 		    
 		        //Debugging - Log the current scroll position.
 		        //console.log(data.curTop);
-		    }
+		    },
+        mobileCheck: function() {
+                //hack - forces mobile version to be off
+                return false;
+        }
 		});
 		
 		// Get window size
