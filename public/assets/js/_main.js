@@ -9,6 +9,7 @@
  */
 
 ( function( $ ) {
+  var touch = Modernizr.touch;
 	
 	// Setup variables
 	$window = $(window);
@@ -41,7 +42,16 @@
 		    },
         mobileCheck: function() {
                 //hack - forces mobile version to be off
-                return false;
+                
+                var isMobile;
+                if (touch === true) {
+                  isMobile = true;
+                  alert("Please use your desktop browser for the site to display properly.");
+                } else {
+                  isMobile = false;
+                }
+
+                return isMobile;
         }
 		});
 		
