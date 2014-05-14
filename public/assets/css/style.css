@@ -289,6 +289,7 @@ main {
 
 /* Slide 3 */
 #profile-photo .bcg {background-image:url('/assets/images/bcg_profile.jpg');background-color:#eed9b5;}
+#profile-photo a{color:#fff;}
 
 
 /* Slide 4 */
