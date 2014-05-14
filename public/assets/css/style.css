@@ -317,6 +317,7 @@ main {
 #contact .resume{margin-top:80px;}
 #contact .resume a{background:#f8c74c;color:#fff;font-size:30px;padding:10px 30px;}
 #contact .resume a:hover{background:#e3b748;}
+.copyright{font-size:12px;margin-top:80px;}
 
 .hsContainer {
 	display: table;
