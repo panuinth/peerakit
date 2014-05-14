@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Champ - design, implement, and test</title>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Bootstrap -->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="loading">
+
+<header role="banner" id="top" class="navbar">
+   <div class="container">
+     <div class="navbar-header">
+       <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+     </div>
+     <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+       <ul class="nav nav-justified" id="top-menu">
+         <li><a class="profile-menu" href="#profile">PROFILE</a></li>
+         <li><a class="experience-menu" href="#experience">EXPERIENCE</a></li>
+         <li><a class="contact-menu" href="#contact">CONTACT</a></li>
+         <li><a class="blog-menu" href="http://champ149.tumblr.com" target="_blank">BLOG</a></li>
+       </ul>
+     </nav>
+  </div>
+</header>
+
+
+<%= yield %>
+
+<script type="text/javascript" src="/assets/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/modernizr.min.js"></script>
+<script type="text/javascript" src="/assets/js/imagesloaded.js"></script>
+<script type="text/javascript" src="/assets/js/skrollr.js"></script>
+<script type="text/javascript" src="/assets/js/_main.js"></script>
+
+<script type="text/javascript">
+$(function() {
+  //Menu
+  $('.home-menu').on('click', function(e){
+    e.preventDefault();
+    $("html, body").animate({scrollTop: "0"}, {easing: "swing", duration: 5000});
+  });
+
+  $('.profile-menu').on('click', function(e){
+    e.preventDefault();
+    $("html, body").animate({scrollTop: "500"}, {easing: "swing", duration: 5000});
+  });
+
+  $('.experience-menu').on('click', function(e){
+    e.preventDefault();
+    $("html, body").animate({scrollTop: "1520"}, {easing: "swing", duration: 5000});
+  });
+
+  $('.contact-menu').on('click', function(e){
+    e.preventDefault();
+    $("html, body").animate({scrollTop: "5000"}, {easing: "swing", duration: 5000});
+  });
+
+});
+</script>
+
+</body>
+</html>
+
+
